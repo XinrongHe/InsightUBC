@@ -1,0 +1,68 @@
+{
+    "title": "Valid Min",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "rooms_furniture": "*Tables*"
+                    }
+                },
+                {
+                    "GT": {
+                        "rooms_seats": 300
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "rooms_number",
+                "minSeats"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "minSeats"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_shortname",
+                "rooms_number"
+            ],
+            "APPLY": [
+                {
+                    "minSeats": {
+                        "MIN": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "rooms_shortname": "OSBO",
+            "rooms_number": "A",
+            "minSeats": 442
+        },
+        {
+            "rooms_shortname": "HEBB",
+            "rooms_number": "100",
+            "minSeats": 375
+        },
+        {
+            "rooms_shortname": "LSC",
+            "rooms_number": "1001",
+            "minSeats": 350
+        },
+        {
+            "rooms_shortname": "LSC",
+            "rooms_number": "1002",
+            "minSeats": 350
+        }
+    ]
+}

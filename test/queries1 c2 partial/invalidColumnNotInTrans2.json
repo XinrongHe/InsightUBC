@@ -1,0 +1,31 @@
+{
+    "title": "Unexpected response status 400: Keys in COLUMNS must be in GROUP or APPLY when TRANSFORMATIONS is present",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_lon",
+                "sumGeo",
+                "rooms_lat"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_lon"
+            ],
+            "APPLY": [
+                {
+                    "sumGeo": {
+                        "SUM": "rooms_lat"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

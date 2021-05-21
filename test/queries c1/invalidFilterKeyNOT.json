@@ -1,0 +1,22 @@
+{
+    "title": "Invalid filter key: not",
+    "query": {
+        "WHERE": {
+            "not": {
+                "LT": {
+                    "courses_avg": 99
+                }
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

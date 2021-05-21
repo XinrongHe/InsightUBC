@@ -1,0 +1,19 @@
+{
+    "title": "invalid empty idsrting. Cannot query more than one dataset",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

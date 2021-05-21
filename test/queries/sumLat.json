@@ -1,0 +1,29 @@
+{
+    "title": "check Sum lat",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_lon",
+                "sumGeo"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_lon"
+            ],
+            "APPLY": [
+                {
+                    "sumGeo": {
+                        "SUM": "rooms_lat"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_lon":-123.25099,"sumGeo":49.26},{"rooms_lon":-123.25249,"sumGeo":49.26},{"rooms_lon":-123.25468,"sumGeo":344.88},{"rooms_lon":-123.25314,"sumGeo":49.26},{"rooms_lon":-123.24718,"sumGeo":49.26},{"rooms_lon":-123.25308,"sumGeo":197.06},{"rooms_lon":-123.24894,"sumGeo":197.07},{"rooms_lon":-123.25224,"sumGeo":98.53},{"rooms_lon":-123.24886,"sumGeo":49.26},{"rooms_lon":-123.24608,"sumGeo":49.27},{"rooms_lon":-123.25623,"sumGeo":98.53},{"rooms_lon":-123.25165,"sumGeo":49.27},{"rooms_lon":-123.25374,"sumGeo":147.8},{"rooms_lon":-123.25364,"sumGeo":49.26},{"rooms_lon":-123.24807,"sumGeo":98.52},{"rooms_lon":-123.25042,"sumGeo":49.27},{"rooms_lon":-123.2521,"sumGeo":98.54},{"rooms_lon":-123.25533,"sumGeo":98.53},{"rooms_lon":-123.24494,"sumGeo":147.79},{"rooms_lon":-123.24935,"sumGeo":98.52},{"rooms_lon":-123.25027,"sumGeo":49.26},{"rooms_lon":-123.255534,"sumGeo":49.27},{"rooms_lon":-123.254816,"sumGeo":49.27},{"rooms_lon":-123.2531,"sumGeo":49.26},{"rooms_lon":-123.24342,"sumGeo":98.52},{"rooms_lon":-123.24467,"sumGeo":49.26},{"rooms_lon":-123.24937,"sumGeo":98.53},{"rooms_lon":-123.25431,"sumGeo":197.05},{"rooms_lon":-123.24673,"sumGeo":246.32}]}

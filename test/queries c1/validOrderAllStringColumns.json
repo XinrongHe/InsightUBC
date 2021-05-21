@@ -1,0 +1,89 @@
+{
+    "title": "order data with course_id string",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 90
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "adhe"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "courses_dept"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_id": "329",
+            "courses_dept": "adhe"
+        },
+        {
+            "courses_id": "329",
+            "courses_dept": "adhe"
+        },
+        {
+            "courses_id": "329",
+            "courses_dept": "adhe"
+        },
+        {
+            "courses_id": "329",
+            "courses_dept": "adhe"
+        },
+        {
+            "courses_id": "329",
+            "courses_dept": "adhe"
+        },
+        {
+            "courses_id": "330",
+            "courses_dept": "adhe"
+        },
+        {
+            "courses_id": "330",
+            "courses_dept": "adhe"
+        },
+        {
+            "courses_id": "330",
+            "courses_dept": "adhe"
+        },
+        {
+            "courses_id": "330",
+            "courses_dept": "adhe"
+        },
+        {
+            "courses_id": "330",
+            "courses_dept": "adhe"
+        },
+        {
+            "courses_id": "330",
+            "courses_dept": "adhe"
+        },
+        {
+            "courses_id": "330",
+            "courses_dept": "adhe"
+        },
+        {
+            "courses_id": "330",
+            "courses_dept": "adhe"
+        },
+        {
+            "courses_id": "412",
+            "courses_dept": "adhe"
+        },
+        {
+            "courses_id": "412",
+            "courses_dept": "adhe"
+        }
+    ]
+}

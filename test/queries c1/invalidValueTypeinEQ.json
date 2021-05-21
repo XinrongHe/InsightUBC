@@ -1,0 +1,20 @@
+{
+    "title": "Invalid value type in EQ, should be number",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_avg": "6689"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

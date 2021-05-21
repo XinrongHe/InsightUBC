@@ -1,0 +1,36 @@
+{
+    "title": "check max lon",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_lon",
+                "maxGeo"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "maxGeo",
+                    "rooms_lon"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_lon"
+            ],
+            "APPLY": [
+                {
+                    "maxGeo": {
+                        "MAX": "rooms_lon"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_lon":-123.24342,"maxGeo":-123.24342},{"rooms_lon":-123.24467,"maxGeo":-123.24467},{"rooms_lon":-123.24494,"maxGeo":-123.24494},{"rooms_lon":-123.24608,"maxGeo":-123.24608},{"rooms_lon":-123.24673,"maxGeo":-123.24673},{"rooms_lon":-123.24718,"maxGeo":-123.24718},{"rooms_lon":-123.24807,"maxGeo":-123.24807},{"rooms_lon":-123.24886,"maxGeo":-123.24886},{"rooms_lon":-123.24894,"maxGeo":-123.24894},{"rooms_lon":-123.24935,"maxGeo":-123.24935},{"rooms_lon":-123.24937,"maxGeo":-123.24937},{"rooms_lon":-123.25027,"maxGeo":-123.25027},{"rooms_lon":-123.25042,"maxGeo":-123.25042},{"rooms_lon":-123.25099,"maxGeo":-123.25099},{"rooms_lon":-123.25165,"maxGeo":-123.25165},{"rooms_lon":-123.2521,"maxGeo":-123.2521},{"rooms_lon":-123.25224,"maxGeo":-123.25224},{"rooms_lon":-123.25249,"maxGeo":-123.25249},{"rooms_lon":-123.25308,"maxGeo":-123.25308},{"rooms_lon":-123.2531,"maxGeo":-123.2531},{"rooms_lon":-123.25314,"maxGeo":-123.25314},{"rooms_lon":-123.25364,"maxGeo":-123.25364},{"rooms_lon":-123.25374,"maxGeo":-123.25374},{"rooms_lon":-123.25431,"maxGeo":-123.25431},{"rooms_lon":-123.25468,"maxGeo":-123.25468},{"rooms_lon":-123.254816,"maxGeo":-123.254816},{"rooms_lon":-123.25533,"maxGeo":-123.25533},{"rooms_lon":-123.255534,"maxGeo":-123.255534},{"rooms_lon":-123.25623,"maxGeo":-123.25623}]}

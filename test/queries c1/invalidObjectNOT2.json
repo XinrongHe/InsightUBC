@@ -1,0 +1,18 @@
+{
+    "title": "NOT must be object2",
+    "query": {
+        "WHERE": {
+            "NOT": 976
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

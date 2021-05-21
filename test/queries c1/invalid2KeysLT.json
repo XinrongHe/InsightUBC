@@ -1,0 +1,21 @@
+{
+    "title": "LT should only have 1 key, has 2",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_avg": 90,
+                "courses_pass": 50
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

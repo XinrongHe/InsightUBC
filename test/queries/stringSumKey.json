@@ -1,0 +1,29 @@
+{
+    "title": "Invalid key type in SUM",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_lon",
+                "sumAdr"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_lon"
+            ],
+            "APPLY": [
+                {
+                    "sumAdr": {
+                        "SUM": "rooms_address"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"}

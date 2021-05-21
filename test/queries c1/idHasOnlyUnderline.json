@@ -1,0 +1,19 @@
+{
+    "title": "invalid only underline idsrting.",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "__avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "__dept",
+                "__avg"
+            ],
+            "ORDER": "__avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,128 @@
+{
+    "title": "select courses_pass > 10 , and courses_dept = adhe, and courses_avg not > 90",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_pass": 10
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "adhe"
+                    }
+                },
+                {
+                    "NOT": {
+                        "LT": {
+                            "courses_avg": 90
+                        }
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 90.02,
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 90.16,
+            "courses_year": 2015
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 90.17,
+            "courses_year": 2011
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 90.18,
+            "courses_year": 2007
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 90.5,
+            "courses_year": 2012
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 90.72,
+            "courses_year": 2014
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 90.82,
+            "courses_year": 2015
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 90.85,
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 91.29,
+            "courses_year": 2016
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 91.33,
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 91.33,
+            "courses_year": 2012
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 91.48,
+            "courses_year": 2009
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 92.54,
+            "courses_year": 2015
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 93.33,
+            "courses_year": 2016
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 96.11,
+            "courses_year": 2015
+        }
+    ]
+}

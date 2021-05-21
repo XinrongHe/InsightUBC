@@ -1,0 +1,42 @@
+{
+    "title": "Unexpected response status 400: Apply rule should only have 1 key, has 2",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_lon",
+                "countlon",
+                "maxlat"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "countlon",
+                    "rooms_lon",
+                    "maxlat"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_lon"
+            ],
+            "APPLY": [
+                {
+                    "countlon": {
+                        "COUNT": "rooms_lon"
+                    },
+                    "maxlat": {
+                        "COUNT": "rooms_lat"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

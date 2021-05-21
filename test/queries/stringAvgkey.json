@@ -1,0 +1,37 @@
+{
+    "title": "Invalid key type in AVG",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_lon",
+                "avgFN"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "avgFN",
+                    "rooms_lon"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_lon"
+            ],
+            "APPLY": [
+                {
+                    "avgFN": {
+                        "AVG": "rooms_fullname"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

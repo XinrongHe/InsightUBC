@@ -1,0 +1,193 @@
+{
+    "title": "select rows that has course_avg > 99 or courses_instructor is falk, clifford or courses_year =2000 or course_avg not < 99",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "GT": {
+                        "courses_avg": 99
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_instructor": "falk, clifford"
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_year": 2000
+                    }
+                },
+                {
+                    "NOT": {
+                        "LT": {
+                            "courses_avg": 99
+                        }
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 83.05,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "etec",
+            "courses_id": "500",
+            "courses_avg": 83.07,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "etec",
+            "courses_id": "500",
+            "courses_avg": 83.24,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 85.2,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "etec",
+            "courses_id": "512",
+            "courses_avg": 86.06,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "etec",
+            "courses_id": "512",
+            "courses_avg": 86.1,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 86.33,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "etec",
+            "courses_id": "512",
+            "courses_avg": 86.38,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 86.45,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "etec",
+            "courses_id": "512",
+            "courses_avg": 87,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "etec",
+            "courses_id": "500",
+            "courses_avg": 87.47,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "etec",
+            "courses_id": "500",
+            "courses_avg": 87.9,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "etec",
+            "courses_id": "512",
+            "courses_avg": 87.95,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 88.25,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "etec",
+            "courses_id": "500",
+            "courses_avg": 88.44,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 88.91,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 89.08,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 90.18,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "etec",
+            "courses_id": "512",
+            "courses_avg": 90.19,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "etec",
+            "courses_id": "500",
+            "courses_avg": 90.25,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "etec",
+            "courses_id": "500",
+            "courses_avg": 90.38,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "etec",
+            "courses_id": "512",
+            "courses_avg": 90.41,
+            "courses_instructor": "falk, clifford"
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "574",
+            "courses_avg": 99.19,
+            "courses_instructor": "cox, daniel"
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "527",
+            "courses_avg": 99.78,
+            "courses_instructor": ""
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "527",
+            "courses_avg": 99.78,
+            "courses_instructor": "gomez, jose"
+        }
+    ]
+}

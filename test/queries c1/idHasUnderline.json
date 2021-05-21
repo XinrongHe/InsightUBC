@@ -1,0 +1,19 @@
+{
+    "title": "invalid underline idsrting.",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "course_c_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "course_c_dept",
+                "course_c_avg"
+            ],
+            "ORDER": "course_c_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

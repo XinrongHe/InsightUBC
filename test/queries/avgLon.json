@@ -1,0 +1,36 @@
+{
+    "title": "check avg lon",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_lon",
+                "avgGeo"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "avgGeo",
+                    "rooms_lon"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_lon"
+            ],
+            "APPLY": [
+                {
+                    "avgGeo": {
+                        "AVG": "rooms_lon"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_lon":-123.24342,"avgGeo":-123.24},{"rooms_lon":-123.24467,"avgGeo":-123.24},{"rooms_lon":-123.24494,"avgGeo":-123.24},{"rooms_lon":-123.24608,"avgGeo":-123.25},{"rooms_lon":-123.24673,"avgGeo":-123.25},{"rooms_lon":-123.24718,"avgGeo":-123.25},{"rooms_lon":-123.24807,"avgGeo":-123.25},{"rooms_lon":-123.24886,"avgGeo":-123.25},{"rooms_lon":-123.24894,"avgGeo":-123.25},{"rooms_lon":-123.24935,"avgGeo":-123.25},{"rooms_lon":-123.24937,"avgGeo":-123.25},{"rooms_lon":-123.25027,"avgGeo":-123.25},{"rooms_lon":-123.25042,"avgGeo":-123.25},{"rooms_lon":-123.25099,"avgGeo":-123.25},{"rooms_lon":-123.25165,"avgGeo":-123.25},{"rooms_lon":-123.2521,"avgGeo":-123.25},{"rooms_lon":-123.25224,"avgGeo":-123.25},{"rooms_lon":-123.25249,"avgGeo":-123.25},{"rooms_lon":-123.25308,"avgGeo":-123.25},{"rooms_lon":-123.2531,"avgGeo":-123.25},{"rooms_lon":-123.25314,"avgGeo":-123.25},{"rooms_lon":-123.25364,"avgGeo":-123.25},{"rooms_lon":-123.25374,"avgGeo":-123.25},{"rooms_lon":-123.25431,"avgGeo":-123.25},{"rooms_lon":-123.25468,"avgGeo":-123.25},{"rooms_lon":-123.254816,"avgGeo":-123.25},{"rooms_lon":-123.25533,"avgGeo":-123.26},{"rooms_lon":-123.255534,"avgGeo":-123.26},{"rooms_lon":-123.25623,"avgGeo":-123.26}]}

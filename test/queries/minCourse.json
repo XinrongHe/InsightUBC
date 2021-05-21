@@ -1,0 +1,36 @@
+{
+    "title": "check min course",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "minYear"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "minYear",
+                    "courses_dept"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept"
+            ],
+            "APPLY": [
+                {
+                    "minYear": {
+                        "MIN": "courses_year"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"cnps","minYear":2012},{"courses_dept":"math","minYear":1900}]}

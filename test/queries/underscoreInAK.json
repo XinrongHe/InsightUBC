@@ -1,0 +1,42 @@
+{
+    "title": "check count lon",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_lon",
+                "countGeo",
+                "count_Furn"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "countGeo",
+                    "rooms_lon"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_lon"
+            ],
+            "APPLY": [
+                {
+                    "countGeo": {
+                        "COUNT": "rooms_lon"
+                    }
+                },
+                {
+                    "count_Furn": {
+                        "COUNT": "rooms_furniture"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"}

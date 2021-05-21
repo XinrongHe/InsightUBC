@@ -1,0 +1,59 @@
+{
+    "title": "select courses_year less than or equal to 2000, courses_avg > 90, and courses_dept = adhe",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 90
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "adhe"
+                    }
+                },
+                {
+                    "OR": [
+                        {
+                            "EQ": {
+                                "courses_year": 2000
+                            }
+                        },
+                        {
+                            "LT": {
+                                "courses_year": 2000
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 90.02
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 90.85
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 91.33
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "title": "SELECT dept, avg, year WHERE avg > 99",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "cnps",
+            "courses_avg": 99.19,
+            "courses_year": 2012
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 99.78,
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 99.78,
+            "courses_year": 2009
+        }
+    ]
+}

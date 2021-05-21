@@ -1,0 +1,19 @@
+{
+    "title": "invalid undefine idsrting.",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "_dept",
+                "_avg"
+            ],
+            "ORDER": "_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

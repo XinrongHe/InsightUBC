@@ -1,0 +1,36 @@
+{
+    "title": "Invalid key type in MAX",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "maxYear"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "maxYear",
+                    "courses_dept"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept"
+            ],
+            "APPLY": [
+                {
+                    "maxYear": {
+                        "MAX": "courses_uuid"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"}

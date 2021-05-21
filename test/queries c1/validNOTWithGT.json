@@ -1,0 +1,58 @@
+{
+    "title": "select rows that has course_avg not > 5 ",
+    "query": {
+        "WHERE": {
+            "NOT": {
+                "GT": {
+                    "courses_avg": 5
+                }
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "lfs",
+            "courses_avg": 0,
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "lfs",
+            "courses_avg": 0,
+            "courses_year": 2009
+        },
+        {
+            "courses_dept": "frst",
+            "courses_avg": 0,
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "wood",
+            "courses_avg": 1,
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "busi",
+            "courses_avg": 4,
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "busi",
+            "courses_avg": 4,
+            "courses_year": 2016
+        },
+        {
+            "courses_dept": "fopr",
+            "courses_avg": 4.5,
+            "courses_year": 2013
+        }
+    ]
+}

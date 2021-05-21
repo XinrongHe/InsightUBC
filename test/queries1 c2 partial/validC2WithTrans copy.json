@@ -1,0 +1,39 @@
+{
+    "title": "Valid Sum",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "rooms_furniture": "*Tables*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "avgSeats"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "avgSeats"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_shortname"
+            ],
+            "APPLY": [
+                {
+                    "avgSeats": {
+                        "AVG": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_shortname":"SRC","avgSeats":299},{"rooms_shortname":"LSC","avgSeats":275},{"rooms_shortname":"OSBO","avgSeats":241},{"rooms_shortname":"FRDM","avgSeats":160},{"rooms_shortname":"HEBB","avgSeats":134.25},{"rooms_shortname":"LSK","avgSeats":126.25},{"rooms_shortname":"CHBE","avgSeats":118},{"rooms_shortname":"DMP","avgSeats":88},{"rooms_shortname":"MCLD","avgSeats":83.83},{"rooms_shortname":"ESB","avgSeats":80},{"rooms_shortname":"IONA","avgSeats":75},{"rooms_shortname":"SWNG","avgSeats":64.59},{"rooms_shortname":"GEOG","avgSeats":56.29},{"rooms_shortname":"ANGU","avgSeats":55.21},{"rooms_shortname":"MATH","avgSeats":52},{"rooms_shortname":"EOSM","avgSeats":50},{"rooms_shortname":"PHRM","avgSeats":48.91},{"rooms_shortname":"CEME","avgSeats":48.17},{"rooms_shortname":"FORW","avgSeats":47.33},{"rooms_shortname":"BRKX","avgSeats":47},{"rooms_shortname":"ALRD","avgSeats":45.6},{"rooms_shortname":"WOOD","avgSeats":45.54},{"rooms_shortname":"UCLL","avgSeats":44.33},{"rooms_shortname":"BUCH","avgSeats":43.32},{"rooms_shortname":"LASR","avgSeats":40},{"rooms_shortname":"BIOL","avgSeats":36},{"rooms_shortname":"SCRF","avgSeats":34.48},{"rooms_shortname":"FSC","avgSeats":34},{"rooms_shortname":"ANSO","avgSeats":32},{"rooms_shortname":"HENN","avgSeats":32},{"rooms_shortname":"IBLC","avgSeats":31.65},{"rooms_shortname":"PCOH","avgSeats":30.86},{"rooms_shortname":"ORCH","avgSeats":29.22},{"rooms_shortname":"FNH","avgSeats":28},{"rooms_shortname":"SPPH","avgSeats":27.67},{"rooms_shortname":"AUDX","avgSeats":20.5},{"rooms_shortname":"MCML","avgSeats":17.59},{"rooms_shortname":"SOWK","avgSeats":14.67}]}

@@ -1,0 +1,121 @@
+{
+    "title": "order data with course_avg number",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 90
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "adhe"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "courses_instructor",
+                "courses_avg",
+                "courses_pass"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_id": "329",
+            "courses_instructor": "",
+            "courses_avg": 90.02,
+            "courses_pass": 62
+        },
+        {
+            "courses_id": "412",
+            "courses_instructor": "vanwynsberghe, robert",
+            "courses_avg": 90.16,
+            "courses_pass": 31
+        },
+        {
+            "courses_id": "330",
+            "courses_instructor": "bishundayal, deonarine",
+            "courses_avg": 90.17,
+            "courses_pass": 29
+        },
+        {
+            "courses_id": "412",
+            "courses_instructor": "falk, clifford",
+            "courses_avg": 90.18,
+            "courses_pass": 11
+        },
+        {
+            "courses_id": "330",
+            "courses_instructor": "bishundayal, deonarine",
+            "courses_avg": 90.5,
+            "courses_pass": 18
+        },
+        {
+            "courses_id": "330",
+            "courses_instructor": "bishundayal, deonarine",
+            "courses_avg": 90.72,
+            "courses_pass": 25
+        },
+        {
+            "courses_id": "329",
+            "courses_instructor": "bishundayal, deonarine",
+            "courses_avg": 90.82,
+            "courses_pass": 33
+        },
+        {
+            "courses_id": "330",
+            "courses_instructor": "",
+            "courses_avg": 90.85,
+            "courses_pass": 34
+        },
+        {
+            "courses_id": "330",
+            "courses_instructor": "bishundayal, deonarine",
+            "courses_avg": 91.29,
+            "courses_pass": 28
+        },
+        {
+            "courses_id": "330",
+            "courses_instructor": "",
+            "courses_avg": 91.33,
+            "courses_pass": 18
+        },
+        {
+            "courses_id": "330",
+            "courses_instructor": "bishundayal, deonarine",
+            "courses_avg": 91.33,
+            "courses_pass": 18
+        },
+        {
+            "courses_id": "330",
+            "courses_instructor": "bishundayal, deonarine",
+            "courses_avg": 91.48,
+            "courses_pass": 23
+        },
+        {
+            "courses_id": "329",
+            "courses_instructor": "bishundayal, deonarine",
+            "courses_avg": 92.54,
+            "courses_pass": 26
+        },
+        {
+            "courses_id": "329",
+            "courses_instructor": "bishundayal, deonarine",
+            "courses_avg": 93.33,
+            "courses_pass": 33
+        },
+        {
+            "courses_id": "329",
+            "courses_instructor": "bishundayal, deonarine",
+            "courses_avg": 96.11,
+            "courses_pass": 27
+        }
+    ]
+}

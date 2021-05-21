@@ -1,0 +1,20 @@
+{
+    "title": "Asterisks (*) makes it too long 2",
+    "query": {
+        "WHERE": {
+          "IS": {
+            "courses_dept": "**"
+          }
+        },
+        "OPTIONS": {
+          "COLUMNS": [
+            "courses_dept",
+            "courses_avg",
+            "courses_year"
+          ],
+          "ORDER": "courses_avg"
+        }
+      },
+    "isQueryValid": false,
+    "result": "ResultTooLargeError"
+}

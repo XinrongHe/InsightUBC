@@ -1,0 +1,44 @@
+{
+    "title": "Referenced dataset \"room\" not added yet",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "room_lon",
+                "countlon",
+                "maxlat"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "countlon",
+                    "rooms_lon",
+                    "maxlat"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_lon"
+            ],
+            "APPLY": [
+                {
+                    "countlon": {
+                        "COUNT": "rooms_lon"
+                    }
+                },
+                {
+                    "maxlat": {
+                        "COUNT": "rooms_lat"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

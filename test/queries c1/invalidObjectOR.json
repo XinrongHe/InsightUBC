@@ -1,0 +1,21 @@
+{
+    "title": "OR must be object",
+    "query": {
+        "WHERE": {
+            "OR": [
+                976,
+                "course"
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

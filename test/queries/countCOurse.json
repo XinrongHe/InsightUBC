@@ -1,0 +1,36 @@
+{
+    "title": "check count lon",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "countUUID"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "countUUID",
+                    "courses_dept"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept"
+            ],
+            "APPLY": [
+                {
+                    "countUUID": {
+                        "COUNT": "courses_uuid"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"math","countUUID":2},{"courses_dept":"cnps","countUUID":1}]}

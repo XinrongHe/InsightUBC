@@ -1,0 +1,15 @@
+{
+    "title": "Empty Columns and no order, COLUMNS must be a non-empty array",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": []
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

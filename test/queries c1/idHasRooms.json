@@ -1,0 +1,19 @@
+{
+    "title": "invalid underline idsrting. And referenced dataset has not added yet",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_dept",
+                "rooms_avg"
+            ],
+            "ORDER": "rooms_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,20 @@
+{
+    "title": "Invalid key type in GT",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_title": 55
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

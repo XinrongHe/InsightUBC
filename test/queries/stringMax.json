@@ -1,0 +1,36 @@
+{
+    "title": "Invalid key type in MAX",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_lon",
+                "maxType"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "maxType",
+                    "rooms_lon"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_lon"
+            ],
+            "APPLY": [
+                {
+                    "maxType": {
+                        "MAX": "rooms_type"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"}

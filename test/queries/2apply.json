@@ -1,0 +1,43 @@
+{
+    "title": "2 apply",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_lon",
+                "countlon",
+                "maxlat"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "countlon",
+                    "rooms_lon",
+                    "maxlat"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_lon"
+            ],
+            "APPLY": [
+                {
+                    "countlon": {
+                        "COUNT": "rooms_lon"
+                    }
+                },
+                {
+                    "maxlat": {
+                        "COUNT": "rooms_lat"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_lon":-123.24342,"countlon":1,"maxlat":1},{"rooms_lon":-123.24467,"countlon":1,"maxlat":1},{"rooms_lon":-123.24494,"countlon":1,"maxlat":1},{"rooms_lon":-123.24608,"countlon":1,"maxlat":1},{"rooms_lon":-123.24673,"countlon":1,"maxlat":1},{"rooms_lon":-123.24718,"countlon":1,"maxlat":1},{"rooms_lon":-123.24807,"countlon":1,"maxlat":1},{"rooms_lon":-123.24886,"countlon":1,"maxlat":1},{"rooms_lon":-123.24894,"countlon":1,"maxlat":2},{"rooms_lon":-123.24935,"countlon":1,"maxlat":1},{"rooms_lon":-123.24937,"countlon":1,"maxlat":1},{"rooms_lon":-123.25027,"countlon":1,"maxlat":1},{"rooms_lon":-123.25042,"countlon":1,"maxlat":1},{"rooms_lon":-123.25099,"countlon":1,"maxlat":1},{"rooms_lon":-123.25165,"countlon":1,"maxlat":1},{"rooms_lon":-123.2521,"countlon":1,"maxlat":1},{"rooms_lon":-123.25224,"countlon":1,"maxlat":1},{"rooms_lon":-123.25249,"countlon":1,"maxlat":1},{"rooms_lon":-123.25308,"countlon":1,"maxlat":1},{"rooms_lon":-123.2531,"countlon":1,"maxlat":1},{"rooms_lon":-123.25314,"countlon":1,"maxlat":1},{"rooms_lon":-123.25364,"countlon":1,"maxlat":1},{"rooms_lon":-123.25374,"countlon":1,"maxlat":1},{"rooms_lon":-123.25431,"countlon":1,"maxlat":1},{"rooms_lon":-123.25468,"countlon":1,"maxlat":1},{"rooms_lon":-123.254816,"countlon":1,"maxlat":1},{"rooms_lon":-123.25533,"countlon":1,"maxlat":1},{"rooms_lon":-123.255534,"countlon":1,"maxlat":1},{"rooms_lon":-123.25623,"countlon":1,"maxlat":1}]}

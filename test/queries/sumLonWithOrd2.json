@@ -1,0 +1,36 @@
+{
+    "title": "check Sum lon with ord",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_lon",
+                "sumGeo"
+            ],
+            "ORDER": {
+
+                "dir": "DOWN",
+
+                "keys": ["sumGeo"]
+
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_lon"
+            ],
+            "APPLY": [
+                {
+                    "sumGeo": {
+                        "SUM": "rooms_lon"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_lon":-123.24467,"sumGeo":-123.24},{"rooms_lon":-123.25099,"sumGeo":-123.25},{"rooms_lon":-123.25249,"sumGeo":-123.25},{"rooms_lon":-123.25314,"sumGeo":-123.25},{"rooms_lon":-123.24718,"sumGeo":-123.25},{"rooms_lon":-123.24886,"sumGeo":-123.25},{"rooms_lon":-123.24608,"sumGeo":-123.25},{"rooms_lon":-123.25165,"sumGeo":-123.25},{"rooms_lon":-123.25364,"sumGeo":-123.25},{"rooms_lon":-123.25042,"sumGeo":-123.25},{"rooms_lon":-123.25027,"sumGeo":-123.25},{"rooms_lon":-123.254816,"sumGeo":-123.25},{"rooms_lon":-123.2531,"sumGeo":-123.25},{"rooms_lon":-123.255534,"sumGeo":-123.26},{"rooms_lon":-123.24342,"sumGeo":-246.49},{"rooms_lon":-123.25224,"sumGeo":-246.5},{"rooms_lon":-123.24807,"sumGeo":-246.5},{"rooms_lon":-123.2521,"sumGeo":-246.5},{"rooms_lon":-123.24935,"sumGeo":-246.5},{"rooms_lon":-123.24937,"sumGeo":-246.5},{"rooms_lon":-123.25623,"sumGeo":-246.51},{"rooms_lon":-123.25533,"sumGeo":-246.51},{"rooms_lon":-123.24494,"sumGeo":-369.73},{"rooms_lon":-123.25374,"sumGeo":-369.76},{"rooms_lon":-123.24894,"sumGeo":-493},{"rooms_lon":-123.25308,"sumGeo":-493.01},{"rooms_lon":-123.25431,"sumGeo":-493.02},{"rooms_lon":-123.24673,"sumGeo":-616.23},{"rooms_lon":-123.25468,"sumGeo":-862.78}]}

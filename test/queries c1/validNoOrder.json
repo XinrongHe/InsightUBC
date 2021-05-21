@@ -1,0 +1,1204 @@
+{
+    "title": "select rows that has course_avg > 99 or courses_dept is adhe, without order",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "GT": {
+                        "courses_avg": 99
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "adhe"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 85.64
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 87.15
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 86.2
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 86.65
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 85.6
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 86.16
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 75.71
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 79.88
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 77.74
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 83.57
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 86.59
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 85.12
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 78.41
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 79.47
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 81.45
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 76.59
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 88.23
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 80.76
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 84.14
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 79.19
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 81.67
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 84.3
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 83.41
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 81.45
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 85.04
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 83.47
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 88.53
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 88.53
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 72.55
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 83.33
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 89.28
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 83.91
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 89.51
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 78
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 82.96
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 86.17
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 84.52
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 84
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 84.9
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 87.5
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 83.66
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 76.54
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 79.04
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 80.86
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 83.71
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 81.89
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 81.62
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 83.83
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 82.73
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 84.87
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 83.07
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 83.9
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 86.59
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 86.59
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 85.81
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 85.81
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 78.21
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 76.63
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 77.42
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "328",
+            "courses_avg": 79.33
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "328",
+            "courses_avg": 79.33
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "328",
+            "courses_avg": 78.91
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "328",
+            "courses_avg": 78.91
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "328",
+            "courses_avg": 78.09
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "328",
+            "courses_avg": 87.14
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "328",
+            "courses_avg": 82.82
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 85.86
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 80.35
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 81.71
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 81.75
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 86.04
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 85.39
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 85.7
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 93.33
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 86.24
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 90.02
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 81.71
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 72.29
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 77
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 78.24
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 86.64
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 89.3
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 77.77
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 86.59
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 83.34
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 86.44
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 83.45
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 84.78
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 80.44
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 67.5
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 77.59
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 75.91
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 75.67
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 89
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 89
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 79.84
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 96.11
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 92.54
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 83.48
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 85.03
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 90.82
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 87.71
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 84.57
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 82.78
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 80.33
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 82.49
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 85.58
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 82.84
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 86.19
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 84.83
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 82.76
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 70.56
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 73.79
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 79.83
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 77.5
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 81.85
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 86
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 83.69
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 89.38
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 89.38
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 86.26
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 86.26
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 79
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 67.95
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 72.93
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 83
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 81.4
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 82
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 88
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 83.16
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 85.72
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 85.41
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 83.87
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 91.29
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 86.72
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 86.5
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 88.56
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 87.47
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 83.68
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 78.85
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 80.4
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 87.68
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 79.5
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 87.17
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 82.81
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 91.48
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 89.55
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 90.85
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 86.13
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 83.29
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 83.74
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 85.06
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 85
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 86.78
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 85.04
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 85.78
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 85.78
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 84.42
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 85.14
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 84.71
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 82.79
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 78.94
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 88.03
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 83.96
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 86.22
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 90.17
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 88.27
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 77
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 77.07
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 77.04
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 90.5
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 89.74
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 83.64
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 88.03
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 87.37
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 91.33
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 91.33
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 82.25
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 82.25
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 85.8
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 85.8
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 82
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 83.45
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 90.72
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 85.2
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 81.2
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 84.45
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 82.9
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 86.33
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 83.05
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 84.07
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 72.96
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 78.2
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 75.43
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 77.58
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 77.58
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 76.22
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 78.77
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 68.89
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 76.17
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 75.68
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 86.45
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 89.08
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 87.88
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 80.25
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 78.57
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 78
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 78.9
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 85.2
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 85.2
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 76.74
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 68.29
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 76.05
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 76.35
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 72.63
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 90.16
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 77.54
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 85.29
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 80.55
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 83.02
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 90.18
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 88.91
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 89.55
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 84.04
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 69.96
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 77.28
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 78.81
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 78.81
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 88.25
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 88.25
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 70.53
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 70.53
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "574",
+            "courses_avg": 99.19
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "527",
+            "courses_avg": 99.78
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "527",
+            "courses_avg": 99.78
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "title": "Asterisks (*) can only be the first or last characters of input strings 2",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "*a*he"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

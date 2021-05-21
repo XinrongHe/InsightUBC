@@ -1,0 +1,19 @@
+{
+    "title": "Invalid key courses_dog in LT",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_dog": 85
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

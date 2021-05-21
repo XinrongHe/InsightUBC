@@ -1,0 +1,44 @@
+{
+    "title": "Invalid ORDER direction",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "roomlon",
+                "countlon",
+                "maxlat"
+            ],
+            "ORDER": {
+                "dir": "UPs",
+                "keys": [
+                    "countlon",
+                    "rooms_lon",
+                    "maxlat"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_lon"
+            ],
+            "APPLY": [
+                {
+                    "countlon": {
+                        "COUNT": "rooms_lon"
+                    }
+                },
+                {
+                    "maxlat": {
+                        "COUNT": "rooms_lat"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,36 @@
+{
+    "title": "year = 2014",
+    "query": {
+        "WHERE": {
+
+            "AND": [
+                {
+                    "IS": {
+                        "courses_id": "310"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "cpsc"
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_year": 2014
+                    }
+                }
+            ]
+
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"cpsc","courses_id":"310","courses_avg":78.69},{"courses_dept":"cpsc","courses_id":"310","courses_avg":79.12},{"courses_dept":"cpsc","courses_id":"310","courses_avg":80.35}]}
+

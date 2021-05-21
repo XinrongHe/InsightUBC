@@ -1,0 +1,45 @@
+{
+    "title": "Invalid key rooms_seat in COLUMNS",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "rooms_furniture": "*Tables*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "rooms_number",
+                "avgSeats",
+                "rooms_seat"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "avgSeats",
+                    "rooms_seat"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_shortname",
+                "rooms_number",
+                "rooms_seat"
+            ],
+            "APPLY": [
+                {
+                    "avgSeats": {
+                        "AVG": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,36 @@
+{
+    "title": "order data with course_avg number",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "GT": {
+                        "courses_avg": 99
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_pass",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_pass": 16,
+            "courses_avg": 99.19
+        },
+        {
+            "courses_pass": 9,
+            "courses_avg": 99.78
+        },
+        {
+            "courses_pass": 9,
+            "courses_avg": 99.78
+        }
+    ]
+}

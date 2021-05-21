@@ -1,0 +1,19 @@
+{
+    "title": "value is empty with IS empty string key",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": ""
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[]}

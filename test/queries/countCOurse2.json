@@ -1,0 +1,42 @@
+{
+    "title": "check count course 2 count",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "countUUID",
+                "countN"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "countUUID",
+                    "courses_dept"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept"
+            ],
+            "APPLY": [
+                {
+                    "countUUID": {
+                        "COUNT": "courses_uuid"
+                    }
+                },
+                {
+                    "countN": {
+                        "COUNT": "courses_audit"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"math","countUUID":2,"countN":1},{"courses_dept":"cnps","countUUID":1,"countN":1}]}

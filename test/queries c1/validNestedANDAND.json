@@ -1,0 +1,69 @@
+{
+    "title": "select courses_year equal to 2015 and courses_fail < 8, courses_avg > 90, and courses_dept = adhe",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 90
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "adhe"
+                    }
+                },
+                {
+                    "AND": [
+                        {
+                            "LT": {
+                                "courses_fail": 8
+                            }
+                        },
+                        {
+                            "EQ": {
+                                "courses_year": 2015
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 90.16,
+            "courses_year": 2015
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 90.82,
+            "courses_year": 2015
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 92.54,
+            "courses_year": 2015
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 96.11,
+            "courses_year": 2015
+        }
+    ]
+}
